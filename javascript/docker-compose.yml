@@ -1,11 +1,10 @@
-version: '2.1'
+version: "3"
 services:
-  restify:
+  database:
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
     volumes:
-      - ./:/home/node/app
-    command: "npx nodemon app/main.js"
+      - ./main.js:/usr/src/app/main.js

@@ -1,5 +1,11 @@
-FROM node:12-slim
+FROM node:lts-slim
 
-WORKDIR /home/node/
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-RUN yarn add restify@8.4.0 nodemon@1.19.4
+RUN yarn add --tilde \
+    restify@8.4.0 \
+    nodemon@1.19.4 
+
+ENTRYPOINT [ "npx" ]
+CMD [ "nodemon", "main.js" ]
