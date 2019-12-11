@@ -7,7 +7,7 @@ During the interview, the candidate will pair with Azavea engineers to
 extend the server's functionality. This server is available in both Python
 and JavaScript variants. The goal of this project is to simulate a set of
 real-world tasks that will allow candidates to demonstrate the skills and
-knowledge required for this role with a project of limited scope.
+knowledge required for this role within a project of limited scope.
 
 For more information on the web frameworks used, please refer to the
 [Flask](https://flask.palletsprojects.com/en/1.1.x/) and
@@ -56,7 +56,7 @@ before the interview begins.
    request tool
 3. Web browser and internet connection
 4. Command line terminal
-5. Running server, in the language preferred by the candidate
+5. Running server, in the language variant preferred by the candidate
 
 ## The interview
 
@@ -114,8 +114,7 @@ If the server process crashes or is reloaded after a code change, the
 in-memory data structure is reset. Have the candidate persist keys/values in
 a way that makes them resilient to server restarts. A common approach is to
 write the contents to disk and reload it when the service starts, but allow
-the
-candidate to suggest possible implementations.
+the candidate to suggest possible implementations.
 
 ##### Evaluation criteria
 
@@ -151,7 +150,8 @@ Does the candidate:
 #### 4. Filter keys by prefix
 
 Add or extend an endpoint to return a list of all keys and values that match the
-provided prefix. For example, the prefix `na` would match `name` and `nation`.
+provided prefix. For example, the prefix `st` would match keys `street_name`
+and `station_id`.
 
 As an extension, have them sort the returned list in lexicographical key order.
 
